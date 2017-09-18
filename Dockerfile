@@ -1,5 +1,5 @@
 FROM alpine
 
-ARG TAG $SOURCE_BRANCH
+ARG SOURCE_BRANCH
 
-RUN touch testfile-$TAG
+RUN touch testfile-$SOURCE_BRANCH
