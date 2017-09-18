@@ -1,4 +1,4 @@
 FROM alpine
 
-COPY testfile /testfile-$SOURCE_BRANCH
-COPY testfile /testfile-$CACHE_TAG
+RUN touch /testfile-$SOURCE_BRANCH
+RUN touch /testfile-$CACHE_TAG
