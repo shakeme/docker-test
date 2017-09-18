@@ -1,4 +1,6 @@
 FROM alpine
 
-RUN touch /testfile-$SOURCE_BRANCH
-RUN touch /testfile-$CACHE_TAG
+RUN echo $VERSION
+RUN echo $DOCKER_TAG
+RUN echo $SOURCE_BRANCH
+RUN echo $IMAGE_NAME
