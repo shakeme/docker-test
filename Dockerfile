@@ -1,6 +1,5 @@
 FROM alpine
 
-RUN echo $VERSION
-RUN echo $DOCKER_TAG
-RUN echo $SOURCE_BRANCH
-RUN echo $IMAGE_NAME
+ARG TAG $SOURCE_BRANCH
+
+RUN touch testfile-$TAG
