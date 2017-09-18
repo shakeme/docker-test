@@ -4,6 +4,6 @@ docker build --build-arg TAG=$SOURCE_BRANCH -t $IMAGE_NAME .
 
 ADDITIONAL_TAGS=(echo $DOCKER_TAG | sed "s/,/ /g" | awk '{for (i=2; i<=NF; i++) print $i}')
 for TAG in $ADDITIONAL_TAGS; do
-    docker tag $IMAGE_NAME $TAG
+    docker tag $IMAGE_NAME $DOCKER_REPO:$TAG
 done
 
