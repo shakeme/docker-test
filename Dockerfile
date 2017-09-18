@@ -1,4 +1,4 @@
-FROM scratch
+FROM alpine
 
 ARG SOURCE_BRANCH
 
