@@ -1,4 +1,9 @@
 #!/bin/bash
 
+echo "Test:"
+echo "----------"
+env
+echo "----------"
+
 docker build --build-arg TAG=$SOURCE_BRANCH -t $IMAGE_NAME .
 
