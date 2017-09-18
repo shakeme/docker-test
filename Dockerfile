@@ -4,4 +4,5 @@ ARG SOURCE_BRANCH
 
 RUN env
 
-RUN touch testfile-$SOURCE_BRANCH
+RUN touch file-$SOURCE_BRANCH
+COPY testfile /testfile-$SOURCE_BRANCH
